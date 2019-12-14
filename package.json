@@ -1,6 +1,6 @@
 {
     "name": "datestamp",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Convert a Unix timestamp to a Date object.",
     "repository": "https://github.com/Richienb/datestamp.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
