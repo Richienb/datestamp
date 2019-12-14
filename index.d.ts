@@ -1,14 +1,14 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Convert a Unix timestamp to a Date object.
+ * @param timestamp The Unix timestamp to convert.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const datestamp = require("datestamp");
+ *
+ * datestamp(1576282111);
+ * //=> 2019-12-14T00:08:31.000Z
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function datestamp(timestamp: number): Date;
 
-export = theModule;
+export = datestamp;

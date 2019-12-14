@@ -1,41 +1,30 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Datestamp [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/datestamp/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/datestamp)
 
-My awesome module.
+Convert a Unix timestamp to a Date object.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/datestamp.png)](https://npmjs.com/package/datestamp)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install datestamp
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const datestamp = require("datestamp");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+datestamp(1576282111);
+//=> 2019-12-14T00:08:31.000Z
 ```
 
 ## API
 
-### theModule(input, options?)
+### datestamp(timestamp)
 
-#### input
+#### timestamp
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The Unix timestamp to convert.

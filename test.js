@@ -1,13 +1,6 @@
 import test from "ava"
-import theModule from "."
+import datestamp from "."
 
 test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
-
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+    t.deepEqual(datestamp(1576282111), new Date("2019-12-14T00:08:31.000Z"))
 })
